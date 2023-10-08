@@ -1,0 +1,15 @@
+<template>
+    <template lwc:if={ready}>
+        <div id="display">
+            <div> Name: {name} </div>
+            <div> Description : {description} </div>
+            <div> Material : {material} </div>
+            <div> Category : {category} </div>
+            <div>Price : {price} </div>
+            <div> <img src={picUrl}> </div>
+        </div>
+    </template>
+    <template lwc:else>
+        <div id="waiting">Waiting to load bikes.....</div>
+    </template>
+</template>
