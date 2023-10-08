@@ -3,9 +3,9 @@
         <div id="display">
             <div> Name: {name} </div>
             <div> Description : {description} </div>
-            <div> Material : {material} </div>
-            <div> Category : {category} </div>
-            <div>Price : {price} </div>
+            <lightning-badge  label= {material}></lightning-badge> 
+            <lightning-badge label= {category}></lightning-badge>
+            <div> Price : {price} </div>
             <div> <img src={picUrl}> </div>
         </div>
     </template>
